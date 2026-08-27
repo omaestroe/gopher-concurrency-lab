@@ -1,7 +1,5 @@
 package domain
 
-//🐹 Worker
-
 type WorkerStatus string
 
 const (
@@ -11,6 +9,7 @@ const (
 	WorkerStopped    WorkerStatus = "STOPPED"
 )
 
+// 🐹 Worker represents a goroutine responsible for processing jobs.
 type Worker struct {
 	ID     string
 	Status WorkerStatus
